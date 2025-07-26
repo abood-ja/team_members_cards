@@ -189,3 +189,48 @@ header p {
 .social-icon i {
   font-size: 1.6rem;
 }
+.team-cta {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 4rem;
+  background-color: var(--bg-overlay);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.team-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary-gradient);
+  width: 100%;
+  height: 5px;
+}
+.team-cta h2 {
+  font-size: 2.88rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-light);
+}
+.team-cta p {
+  color: var(--text-gray);
+  max-width: 50rem;
+  margin: 0 auto 2.5rem;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  background: var(--primary-gradient);
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px var(--shadow-color-primary);
+}
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--shadow-color-primary-hover);
+}
